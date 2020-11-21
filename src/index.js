@@ -13,7 +13,7 @@ app.options('*', cors());
 
 app.use(function (req, res, next) {
   // to allow cross domain requests to send cookie information.
-  res.header('Access-Control-Allow-Credentials', true);
+  // res.header('Access-Control-Allow-Credentials', true);
 
   // origin can not be '*' when crendentials are enabled. so need to set it to the request origin
   res.header('Access-Control-Allow-Origin', '*');
